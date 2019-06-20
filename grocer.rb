@@ -12,7 +12,7 @@ def consolidate_cart(cart)
   consolidated_cart
 end
 
-def apply_coupons(cart:[], coupons:[])
+def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     coupon_name = coupon[:item]
     coupon_item_num = coupon[:num]
@@ -39,7 +39,7 @@ def apply_coupons(cart:[], coupons:[])
 end
 
 def apply_clearance(cart)
-  # code here
+  
 end
 
 def checkout(cart, coupons)
