@@ -18,8 +18,8 @@ def apply_coupons(cart:[], coupons:[])
     if cart.key?(coupon[:item])
       coupon_count = 0
       until coupon[:num] > cart[coupon[:item]][:count]
-      
-  
+        cart[coupon[:item]][:count] -= coupon[:num]
+        
 end
 
 def apply_clearance(cart)
