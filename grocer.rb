@@ -20,6 +20,10 @@ def apply_coupons(cart:[], coupons:[])
       until coupon[:num] > cart[coupon[:item]][:count]
         cart[coupon[:item]][:count] -= coupon[:num]
         cart["#{coupon[:item]} W/COUPON"] = {price: coupon[:cost], clearance: cart[coupon[:item]][:clearance], count: coupon_count += 1}
+      end
+    end
+  end
+  cart.merge(coupons_applied)
 end
 
 def apply_clearance(cart)
