@@ -15,7 +15,8 @@ end
 def apply_coupons(cart:[], coupons:[])
   coupons_applied = {}
   coupons.each do |coupon|
-    
+    if cart.key?(coupon[:item])
+      coupon
   
 end
 
