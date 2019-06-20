@@ -5,7 +5,7 @@ def consolidate_cart(cart)
     consolidated_cart[item_name] = item.values[0]
     if consolidated_cart[item_name][:count]
       consolidated_cart[item_name][:count]+=1
-      
+    else 
 end
 
 def apply_coupons(cart, coupons)
