@@ -14,7 +14,8 @@ end
 
 def apply_coupons(cart:[], coupons:[])
   coupons_applied = {}
-  coupons.each do |coupons|
+  coupons.each do |coupon|
+    
   
 end
 
