@@ -3,7 +3,8 @@ def consolidate_cart(cart)
   cart.each do |item|
     item_name = item.keys[0]
     consolidated_cart[item_name] = item.values[0]
-    if consolidated_cart[item_name]
+    if consolidated_cart[item_name][:count]
+      
 end
 
 def apply_coupons(cart, coupons)
